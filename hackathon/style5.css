@@ -1,0 +1,82 @@
+/* Donor Registration Form Styles */
+.donor-registration {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .donor-registration h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  .donor-registration form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .donor-registration label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .donor-registration input,
+  .donor-registration select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .donor-registration input:focus,
+  .donor-registration select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  .donor-registration button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .donor-registration button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .donor-registration {
+      padding: 15px;
+    }
+  
+    .donor-registration h1 {
+      font-size: 2em;
+    }
+  
+    .donor-registration label {
+      font-size: 1em;
+    }
+  
+    .donor-registration input,
+    .donor-registration select {
+      font-size: 0.9em;
+    }
+  
+    .donor-registration button {
+      font-size: 1em;
+    }
+  }

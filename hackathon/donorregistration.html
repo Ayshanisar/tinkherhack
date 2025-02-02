@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donor Registration - Food Bank</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Food Bank Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="food-list.html">Available Food</a></li>
+        <li><a href="reserve.html">Reserve Food</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="hospitals.html">Hospitals</a></li>
+        <li><a href="delivery-teams.html">Delivery Teams</a></li>
+        <li><a href="donorregistration.html" class="active">Donor Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="donor-registration">
+    <h1>Donor Registration</h1>
+    <form>
+      <label for="address">Donor's Address:</label>
+      <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+      <label for="quantity">Quantity of Food:</label>
+      <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required>
+
+      <label for="food-type">Type of Food:</label>
+      <select id="food-type" name="food-type" required>
+        <option value="" disabled selected>Select food type</option>
+        <option value="veg">Vegetarian</option>
+        <option value="non-veg">Non-Vegetarian</option>
+      </select>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" placeholder="Enter location" required>
+
+      <label for="prepared-time">Prepared Time:</label>
+      <input type="datetime-local" id="prepared-time" name="prepared-time" required>
+
+      <label for="use-by-time">Use By Time:</label>
+      <input type="datetime-local" id="use-by-time" name="use-by-time" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Food Bank. All rights reserved.</p>
+  </footer>
+</body>
+</html>
